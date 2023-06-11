@@ -1,0 +1,173 @@
+#container {
+width: 37%;
+background-color: blue;
+z-index: 1;
+margin:0 auto;
+margin-top: 10px;
+padding: 10px;
+}
+
+.game {
+  display: block;
+  height: 100%;
+  border: solid 3px black;
+  margin:0 auto;
+  z-index: 2;
+}
+
+/* game board table */
+
+#board td {
+  display: absolute;
+  width: 50px;
+  height: 50px;
+  border: solid 4px black;
+  background-color: white;
+  border-radius: 50%;
+  margin:0 auto;
+  padding: 5px;
+  z-index: 3;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: solid 2px black;
+  z-index: 2;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+.piece.p1 {
+  background-color: yellow;
+}
+
+.piece.p2 {
+  background-color: red;
+}
+
+.p1icon {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  border: solid 2px black;
+  z-index: 2;
+  margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.p2icon {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  border: solid 2px black;
+  z-index: 2;
+  margin-left: 85px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 2px black;
+}
+
+#column-top td:hover {
+  background-color: gold;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+#scorecard {
+  display: block;
+  border: 2px solid black;
+  height: 40px;
+  width: 37%;
+  padding: 8px;
+  margin: 0 auto;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: rgb(65, 65, 65);
+  border: 2px solid slategray;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: Montserrat;
+  color: whitesmoke;
+}
+
+button {
+  display: inline;
+  vertical-align: top;
+  margin-top: 10px;
+  background-color:#0a0a23;
+  color: #fff;
+  border: 2px solid white;
+  border-radius:8px;
+}
+
+button:hover {
+  display: inline;
+  vertical-align: top;
+  margin-top: 10px;
+  background-color: gray;
+  color: #fff;
+  border: 2px solid white;
+  border-radius:8px;
+}
+
+p {
+  display: inline;
+  position: absolute;
+  margin: 10px;
+  font-size: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: White;
+}
+
+p.p1text {
+  position: absolute;
+  display: inline-flex;
+  margin: 10px;
+  vertical-align: top;
+  font-size: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: White;
+}
+
+p.p2text {
+  position: absolute;
+  display: inline-flex;
+  margin: 10px;
+  vertical-align: top;
+  font-size: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: White;
+}
+
+h1 {
+  display: absolute;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(65, 65, 65);
+}
+
+h2 {
+  display: absolute;
+  margin-top: -60px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(65, 65, 65);
+}
+
+
+
+
